@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function calc(){
+
+    var n1= parseInt(document.getElementById('weight').value);
+    const txt1=document.getElementById('gender');
+    document.getElementById('result').innerHTML=n1*4.7;
+    
+}
+
+
+</script>
+<style>
+
+form{
+    text-align: center;
+}
+.header {
+  padding: 90px;
+  height: 40%;
+  text-align: center;
+  background: #aa9192;
+  color: rgb(89, 67, 70);
+  font-size: large;
+  
+}
+.navbar {
+    overflow: hidden;
+  background-color: rgb(92, 76, 76);
+  text-align: center;
+  padding: 20px;
+  position: -webkit-sticky;
+
+}
+a{
+    margin-left: 20px;
+    font-size: larger;
+}
+
+
+.bottom{
+    text-align: center;
+    
+    bottom:0;
+    padding: 105px;
+    top:20px;
+    
+    
+
+}
+.bottom2{
+    text-align: center;
+    
+    bottom:0;
+}
+a:link {
+  color: rgb(253, 249, 249);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: rgb(186, 132, 132);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: rgb(253, 249, 249);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(186, 132, 132);
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+<div class="header">
+<h1>Calculate BAC</h1>
+
+
+
+</div>
+<div class="navbar">
+    <a href="home.html" class="active">Home</a>
+    <a href="first.html">Prevent And Get Sober</a>
+    <a href="BAC.html" class="right">Calculate your BAC</a>
+    <a href="https://forms.gle/WEXtianVRrmNoZ1n7">Take our form</a>
+  </div>
+</head>
+
+<body style="background-color:rgb(200, 179, 179);">
+
+<br/>
+<br/>
+    <form>
+        <label for="fname" >First name:</label><br><br/>
+
+        <input type="text" id="name" ><br><br/>
+        <label for="lname" >Last name:</label><br><br/>
+
+        <input type="text" id="lname" ><br><br>
+        <label for="pname">Gender:</label><br><br/>
+
+        <input type="text" id="gender" ><br><br>
+
+        <label for="wname">Weight (lbs):</label><br><br/>
+
+        <input type="text" id="weight" ><br><br>
+
+        <button type="button" onclick="return calc();">Submit</button><br/><br/>
+
+        The result is : <br>
+        <span id="result"></span>
+      </form>
+      
+      
+     
+ 
+
+
+
+</body>
+</html>
+
